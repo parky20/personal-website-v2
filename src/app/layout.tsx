@@ -2,7 +2,7 @@ import Email from "@/components/Email";
 import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
-import { Inter } from "next/font/google";
+import { DM_Serif_Display, Inter, Pacifico } from "next/font/google";
 import Header from "../components/Header";
 import Socials from "../components/Socials";
 import "./globals.css";
@@ -17,17 +17,30 @@ const inter = Inter({
   variable: '--font-inter', 
 }) 
 
+const dmSerif = DM_Serif_Display({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-dm-serif-display', 
+  weight:"400"
+})
+
+const pacifico = Pacifico({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-pacifico', 
+  weight:"400"
+})
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) { 
   return (
-    <html lang="en" className={`${inter.variable}`}>
+    <html lang="en" className={`${inter.variable} ${dmSerif.variable} ${pacifico.variable}`}>
       <head>
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" /> 
       </head>
-      <body className="h-full text-black bg-background dark:bg-dark-background dark:text-dark-text font-playfair"> 
+      <body className="h-full text-black bg-background dark:bg-dark-background dark:text-dark-text font-dmSerif"> 
       <ThemeProvider
           attribute="class"
           defaultTheme="system"

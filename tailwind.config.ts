@@ -91,13 +91,14 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))", 
        }, 
       colors: {
-        "background": "#FDF9FA",
+        "background": "#fdf1e6",
         "dark-background": "#181818", 
         "dark-text": "#BEBECB",
         "dark-title": "#e7e7e7",
         "interactive": "rgb(var(--interactive) / <alpha-value>)",
-        "primary" : "#e16388", 
-        "accent" : "#7A6594"
+        "primary" : "#264143",  
+        "accent" : "#e24e9a",
+        "secondary" : "#fc8fa4"
       }, 
       fontSize: {
         sm: ['14px', '20px'],
@@ -107,6 +108,8 @@ const config: Config = {
       },
       fontFamily: {
         playfair: ['var(--font-inter)'],  
+        dmSerif: ['var(--font-dm-serif-display)'],
+        pacifico: ['var(--font-pacifico)']
       },
       boxShadow: {
         header: "2px 2px 3px #cac2bc"

@@ -1,6 +1,6 @@
  
 const Logo = () => {
-    return (<span><span className="text-primary">Y✦P</span></span>)
+    return (<span className="text-base text-accent font-pacifico -mt-3">y✦p</span>)
 }
 
 export default Logo

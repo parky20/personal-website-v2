@@ -38,7 +38,7 @@ export default function ProjectSection() {
     ];
 
     return (
-        <SectionContainer sectionTitle="PROJECTS">
+        <SectionContainer sectionTitle="projects">
             <div className="px-10 flex flex-col items-stretch tablet:px-0">
                 <div className="grid grid-cols-1 laptop:grid-cols-2 gap-x-10 gap-y-10">  
                     {projects.map(project => (

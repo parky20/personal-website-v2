@@ -21,16 +21,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, isOngoing }) => {
                 </div> 
             )}
             <div className="flex flex-col items-start p-3"> 
-                <span className="text-lg font-semibold dark:text-dark-title">{project.title}</span>
-                <p className="font-light">{project.descr}</p>
+                <span className="text-xl font-semibold dark:text-dark-title">{project.title}</span>
+                <p className=" font-light">{project.descr}</p>
                 <Languages languages={project.lang} /> 
-            </div>
-            {!isOngoing && (
-                <div className="flex space-x-3 px-3">
-                     <GithubIcon border={false}/>   
-                     {project.href && (<LinkIcon href={project.href }/>)}
-                </div>
-            )}
+            </div> 
+            <div className="flex space-x-3 px-3">
+                    <GithubIcon border={false}/>   
+                    {project.href && (<LinkIcon href={project.href }/>)}
+            </div> 
         </motion.div>
     );
 };

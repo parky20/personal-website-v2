@@ -65,8 +65,8 @@ export default function Experience() {
     }, [borderBottom]);
     const {primary, opaque} = Colors
     return (
-        <SectionContainer sectionTitle="EXPERIENCE">  
-            <div className="px-10 grid grid-flow-row-dense text-base
+        <SectionContainer sectionTitle="experience">  
+            <div className="px-10 grid grid-flow-row-dense text-base text-primary
                             laptop:grid-flow-col-dense h-52 mb-28 tablet:px-0 tablet:mb-8 laptop:mb-5">  
                 <ul className="list-none mr-0 border-secondary laptop:border-b-0 laptop:border-l-2 border-opacity-10
                                  h-max flex overflow-x-scroll 
@@ -83,7 +83,7 @@ export default function Experience() {
                             }} 
                             > 
                             <button 
-                                className="whitespace-pre laptop:whitespace-pre-line text-start text-black dark:text-dark-text"
+                                className="whitespace-pre laptop:whitespace-pre-line text-start text-primary font-sans text-sm dark:text-dark-text"
                                 onClick={() =>handleClick(index)}>{w.company}
                             </button>
                         </motion.li>
@@ -92,12 +92,12 @@ export default function Experience() {
                 {workList.map((w, index) => ( 
                     current === index && ( 
                         <motion.div key={index} initial={{opacity:0, x:0}} animate={{opacity: 1, transform: "translateX(5px)", transition: {duration: 0.5, ease: "easeIn"}}} className="flex-col mt-5 laptop:mt-0">
-                            <span className="text-lg font-semibold dark:text-dark-title">{w.position} <span className="text-primary font-bold">@{w.company}</span></span>
-                            <p className="mt-2 font-mono text-sm">{w.date}</p> 
+                            <span className="text-xl font-semibold font-sans dark:text-dark-title">{w.position} <span className="text-accent font-bold">@{w.company}</span></span>
+                            <p className="mt-2 font-playfair text-sm  dark:text-dark-text">{w.date}</p> 
                             <div className="mt-5">
-                                <ul className="list-none space-y-2">
+                                <ul className="list-none space-y-2 font-sans dark:text-dark-text text-base">
                                     {w.dscr.map((d, index) => ( 
-                                        <li key={index}><span className="mr-2 text-primary">▹</span>{d}</li> 
+                                        <li key={index}><span className="mr-2 text-accent">▹</span>{d}</li> 
                                     ))} 
                                 </ul>
                             </div>  

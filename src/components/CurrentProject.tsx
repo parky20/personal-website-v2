@@ -21,7 +21,7 @@ const CurrentProjects = () => {
 
     return (
         <div className="flex flex-col mt-10 space-y-10">
-            <span className="text-primary text-lg font-bold">
+            <span className="font-sans text-lg">
                 Currently Working On...
             </span>
             {ongoing.map((project) => (

@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import "../components/DarkModeSwitch.css";
 import NavigationItem from "./Navigationitem";
 
-export default function ProjectSection() {  
+export default function NavMenux() {  
     const pathname = usePathname();
     const [current, setCurrent] = useState('');
     const activeMenu = (path: string) => {  
