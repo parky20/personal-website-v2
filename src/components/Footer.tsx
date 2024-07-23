@@ -12,8 +12,8 @@ export default function Footer() {
                 visible: { transform: "translateY(0px)" },
                 hidden: { transform: "translateY(-50px)" },
             }}
-        className="flex justify-between items-center font-sans pb-20 w-screen text-secondary laptop:px-28 text-xs tablet:text-sm laptop:text-base px-14"> 
-        <span>MADE WITH ♥ BY YUNI PARK</span>  
+        className="flex justify-between items-center font-sans pb-20 w-screen text-primary laptop:px-28 text-xs tablet:text-sm laptop:text-base px-14"> 
+        <span>ⓒ 2024 Yuni Park ✦ - a website made with love </span>  
         <a href="mailto:park.yun@northeastern.edu" className="p-2 inline-flex items-center whitespace-pre-wrap">Say Hello! <TfiEmail/></a> 
     </motion.div>)  
 }

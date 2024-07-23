@@ -68,7 +68,7 @@ export default function Experience() {
         <SectionContainer sectionTitle="EXPERIENCE">  
             <div className="px-10 grid grid-flow-row-dense text-base
                             laptop:grid-flow-col-dense h-52 mb-28 tablet:px-0 tablet:mb-8 laptop:mb-5">  
-                <ul className="list-none mr-0 border-primary laptop:border-b-0 laptop:border-l-2 border-opacity-10
+                <ul className="list-none mr-0 border-secondary laptop:border-b-0 laptop:border-l-2 border-opacity-10
                                  h-max flex overflow-x-scroll 
                                  border-l-0 border-b-2 
                                 laptop:flex-col laptop:mr-5">
@@ -92,12 +92,12 @@ export default function Experience() {
                 {workList.map((w, index) => ( 
                     current === index && ( 
                         <motion.div key={index} initial={{opacity:0, x:0}} animate={{opacity: 1, transform: "translateX(5px)", transition: {duration: 0.5, ease: "easeIn"}}} className="flex-col mt-5 laptop:mt-0">
-                            <span className="text-lg font-semibold dark:text-dark-title">{w.position} <span className="text-secondary font-bold">@{w.company}</span></span>
+                            <span className="text-lg font-semibold dark:text-dark-title">{w.position} <span className="text-primary font-bold">@{w.company}</span></span>
                             <p className="mt-2 font-mono text-sm">{w.date}</p> 
                             <div className="mt-5">
                                 <ul className="list-none space-y-2">
                                     {w.dscr.map((d, index) => ( 
-                                        <li key={index}><span className="mr-2 text-secondary">▹</span>{d}</li> 
+                                        <li key={index}><span className="mr-2 text-primary">▹</span>{d}</li> 
                                     ))} 
                                 </ul>
                             </div>  

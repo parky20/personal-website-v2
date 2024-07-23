@@ -44,14 +44,14 @@ const MaskedCursor = () => {
                 <div className='flex flex-col items-start justify-center w-9/12 text-white drop-shadow-[289 px_2px_#000000] font-semibold text-3xl tablet:text-4xl laptop:text-5xl'>
                 <motion.h1 initial={{opacity: 0, y: -100}} variants={itemVariants} className= "tablet:mb-4 mb-2">Hey, I&apos;m <span className="text-primary">Yuni Park!</span></motion.h1> 
                     <motion.h2 initial={{opacity: 0, y: -100}} variants={itemVariants} onMouseEnter = {handleMouseEnter} onMouseLeave = {handleMouseLeave}  className= "tablet:mb-4 mb-2">A people-focused thinker passionate about making meaningful interactions</motion.h2> 
-                    <motion.h3 initial={{opacity: 0, y: -100}} variants={itemVariants}onMouseEnter = {handleMouseEnter} onMouseLeave = {handleMouseLeave}  className= "text-xl tablet:text-2xl tablet:mb-4 mb-2 "> <span className="text-primary">✶</span> Recent Northeastern Khoury grad looking for new opportunities</motion.h3> 
+                    <motion.h3 initial={{opacity: 0, y: -100}} variants={itemVariants}onMouseEnter = {handleMouseEnter} onMouseLeave = {handleMouseLeave}  className= "text-xl tablet:text-2xl tablet:mb-4 mb-2 "> <span className="text-primary">✦</span> Recent Northeastern Khoury grad looking for new opportunities</motion.h3> 
                 </div>  
             </motion.div>    
             <div onMouseEnter = {handleMouseEnter} onMouseLeave = {handleMouseLeave} className="font-normal absolute flex flex-col items-center justify-center w-screen">
                 <div  className='flex flex-col items-start justify-center w-9/12 dark:text-white font-semibold text-3xl tablet:text-4xl laptop:text-5xl'>
                     <motion.h1 initial={{opacity: 0, y: -100}} variants={itemVariants} className= "tablet:mb-4 mb-2">Hey, I&apos;m <span className="text-primary">Yuni Park!</span></motion.h1> 
                     <motion.h2 initial={{opacity: 0, y: -100}} variants={itemVariants} onMouseEnter = {handleMouseEnter} onMouseLeave = {handleMouseLeave}  className= "tablet:mb-4 mb-2">A software engineer focused on building memorable interfaces and expereinces</motion.h2> 
-                    <motion.h3 initial={{opacity: 0, y: -100}} variants={itemVariants}onMouseEnter = {handleMouseEnter} onMouseLeave = {handleMouseLeave}  className= "text-xl tablet:text-2xl tablet:mb-4 mb-2 "> <span className="text-primary">✶</span> Recent Northeastern Khoury grad looking for new opportunities</motion.h3> 
+                    <motion.h3 initial={{opacity: 0, y: -100}} variants={itemVariants}onMouseEnter = {handleMouseEnter} onMouseLeave = {handleMouseLeave}  className= "text-xl tablet:text-2xl tablet:mb-4 mb-2 "> <span className="text-primary">✦</span> Recent Northeastern Khoury grad looking for new opportunities</motion.h3> 
                 </div>  
             </div>  
         </motion.div>

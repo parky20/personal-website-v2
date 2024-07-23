@@ -1,23 +1,13 @@
 
 type NavigationItemProps = {
     menu: string;
-    href: string | undefined; // href can be string or undefined
+    href?: string; // href can be string or undefined
+    active?: boolean
   }; 
-
-const menuItem = {
-  initial: {
-    y: 400
-  },
-  animate: {
-    y: 0,
-    transition: {
-      duration: 1
-    }
-  }
-}
-  
-const NavigationItem: React.FC<NavigationItemProps> = ({ menu, href }) => { 
-    return (<div className="px-6 py-1 rounded-full hover:underline decoration-2 underline-offset-4 decoration-primary "><a href={href}>{menu}</a></div>);
+ 
+const NavigationItem: React.FC<NavigationItemProps> = ({ menu, href, active }) => { 
+  console.log(active)
+    return (<div className={`px-6 py-1 rounded-full ${active ? 'underline' : 'no-underline'} hover:underline decoration-2 underline-offset-4 decoration-primary`}><a href={href}>{menu}</a></div>);
 };
 
 export default NavigationItem

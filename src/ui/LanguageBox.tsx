@@ -6,7 +6,7 @@ type LanguageBoxProps = {
 
 const LanguageBox: React.FC<LanguageBoxProps> = ({ children }) => {
     return ( 
-        <span className='px-2 py-1 border-secondary border-[1px] text-xs text-secondary font-mono rounded-md mt-2 mr-2'>{children}</span> 
+        <span className='px-2 py-1 border-primary border-[1px] text-xs text-primary font-mono rounded-md mt-2 mr-2'>{children}</span> 
     );
 };
 

@@ -1,7 +1,7 @@
 'use client'
-import SectionContainer from "@/components/SectionContainer";
 import HighlightedText from "@/ui/HighlightedText";
 import { motion } from "framer-motion";
+import Image from "next/image";
 export default function AboutMe() {
     // const [show, setShow] = useState(false)
     // const [show2, setShow2] = useState(false)
@@ -28,8 +28,8 @@ export default function AboutMe() {
     //     } 
     // }
     return ( 
-        <div className="h-screen flex justify-center items-center">
-             <SectionContainer sectionTitle="BACKGROUND" margin="mb-0">  
+        <div className="h-auto flex flex-col justify-start mt-40 mb-16 items-center">  
+         <span className="text-lg font-semibold mb-10">About Me! <span className="text-primary">₊*✦</span></span> 
          {/* <motion.div animate={show ? "show" : "hide"} variants={{show: {display:"flex"}, hide: {display:"none"} }} className="absolute hidden top-0 right-28"> 
                 <Image src="/arrow1.svg" width={180} height={180} alt="neu-grad" className="absolute top-16 -left-40"/>   
                 <Image src="/grad.png" width={180} height={180} alt="neu-grad" className="rounded-md border-[#174727] border-2"/>   
@@ -42,8 +42,9 @@ export default function AboutMe() {
                 visible: { transform: "translateY(0px)", opacity: 1 },
                 hidden: { transform: "translateY(-100px)", opacity: 0 }
             }}
-            className="overflow-y-hidden">    
-            <p className="text-base md:text-[18px] font-sans font-light">   
+            className="overflow-y-hidden flex flex-col tablet:flex-row w-screen items-center tablet:px-32 laptop:px-52 desktop:px-72 justify-center px-10 ">    
+            <Image className="mb-5" src="/profile.png" alt="profile" width={250} height={250}/>
+            <p className="text-base md:text-[18px] font-sans font-light ml-10">   
                 My name is Yuni Park, and I recently graduated from <HighlightedText 
                 //onClick={handleClick} animate={show ? "show" : "hide"} variants={{show: {textDecoration: "underline", fontSize: 18}, hide: {textDecoration: "none", fontSize: 16}}} 
                 >
@@ -67,9 +68,7 @@ export default function AboutMe() {
         <motion.div animate={show2 ? "show" : "hide"} variants={{show: {display:"flex",rotate:"5deg", transition: {repeat: 5, repeatType: "reverse"}}, hide: {display:"none", rotate:"none"} }} className="absolute hidden bottom-20 right-1/4">   
                 <span className="absolute -left-5 -rotate-45">📍 Barcelona!</span>
                 <Image src="/barcelona.png" width={80} height={80} alt="barcelona"/> 
-        </motion.div>   */}
-    </SectionContainer>  
-
+        </motion.div>   */} 
         </div>
    )
 } 
