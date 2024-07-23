@@ -4,10 +4,10 @@
 
 Welcome to my website! Although thte website is available, there are some changes being made...
 
-1. **Code Clean Up 🧹** Working on further breaking down into components extracting out repetitive codes etc.
-2. **Optimization 🧠** Improving animation load speed and div DOM structures for a more effecient user experience.
-3. ** UX/UI Changes 🎨** Making changes to animations and interface flows (e.g. color, hover effects, transitions).
-4. ** Content 📚** Adding more content to the website such as more projects, project descriptions, process docs, pictures and links! 
+1. **Accessibility 🧹** Working on further breaking down into components extracting out repetitive codes etc.
+2. **Code Clean Up 🧹** Working on further breaking down into components extracting out repetitive codes etc.
+3. **Optimization 🧠 + UX 🎨** Adding more transitions, improving animation load speed and div DOM structures for a more effecient user experience. 
+4. **Content 📚** Adding more content to the website such as more projects, project descriptions, process docs, pictures and links!  
 ## Getting Started
 
 First, run the development server:
