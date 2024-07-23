@@ -1,5 +1,13 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1>
+  Personal Website V2.0 👩‍💻✨
+</h1>
 
+Welcome to my website! Although thte website is available, there are some changes being made...
+
+1. **Code Clean Up 🧹** Working on further breaking down into components extracting out repetitive codes etc.
+2. **Optimization 🧠** Improving animation load speed and div DOM structures for a more effecient user experience.
+3. ** UX/UI Changes 🎨** Making changes to animations and interface flows (e.g. color, hover effects, transitions).
+4. ** Content 📚** Adding more content to the website such as more projects, project descriptions, process docs, pictures and links! 
 ## Getting Started
 
 First, run the development server:
