@@ -1,0 +1,27 @@
+.mask {
+    mask-image: url(../../public/mask.svg);  
+    background-color: 	#FFC0CB;
+    /* #f1ccd4;     */
+    mask-repeat: no-repeat;
+    cursor:default; 
+    box-shadow: 2px 2px 3px black;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out
+}   
+
+@supports (-webkit-text-stroke: 1px black) {
+.text-stroke {  
+    -webkit-text-stroke: 1px black;
+    -webkit-text-fill-color: #fff9fb;
+    } 
+}
+
+@supports (-webkit-text-stroke: 1px black) {
+ .text-stroke-mask {  
+        -webkit-text-stroke: 1px black;
+        -webkit-text-fill-color: #fff9fb;
+        } 
+ }
+ 
+.normal {
+    cursor:default;
+}
