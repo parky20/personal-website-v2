@@ -1,4 +1,3 @@
-'use client'
 import HighlightedText from "@/ui/HighlightedText";
 import Image from "next/image";
 export default function AboutMe() { 
