@@ -46,8 +46,7 @@ export default function Experience() {
     }]
 
     function handleClick(index: number) {  
-        setCurrent(index); 
-        console.log(current);
+        setCurrent(index);  
     }
 
     useEffect(() => { 
