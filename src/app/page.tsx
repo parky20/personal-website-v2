@@ -5,9 +5,8 @@ import MaskedCursor from "@/components/MaskedCursor";
 import ProjectSection from "@/components/ProjectSection";
 import Skills from "@/components/Skills";
 export default function Home() {     
-  return (  
-    
-    <div className="flex flex-col justify-center items-center"> 
+  return (   
+    <div id="root" className="flex flex-col justify-center items-center"> 
         <MaskedCursor/>
         {/* <AboutMe /> */}   
           <Experience />

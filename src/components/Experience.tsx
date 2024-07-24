@@ -66,7 +66,7 @@ export default function Experience() {
     return (
         <SectionContainer sectionTitle="experience">  
             <div className="px-10 grid grid-flow-row-dense text-base text-primary
-                            laptop:grid-flow-col-dense h-52 mb-28 tablet:px-0 tablet:mb-8 laptop:mb-5">  
+                            laptop:grid-flow-col-dense min-h-64 mb-28 tablet:px-0 tablet:mb-8 laptop:mb-5">  
                 <ul className="list-none mr-0 border-secondary laptop:border-b-0 laptop:border-l-2 border-opacity-10
                                  h-max flex overflow-x-scroll 
                                  border-l-0 border-b-2 

@@ -49,8 +49,8 @@ export default function NavMenux() {
             >
                 <NavigationItem 
                     menu="resume" 
-                    href="/404"  
-                    active = {activeMenu("/404")}
+                    href="/resume"  
+                    active = {activeMenu("/resume")}
                 />
             </motion.div>
         </div>   

@@ -11,7 +11,7 @@ const Header = () => {
         <Logo />  
         <NavMenu />
         <div className="hidden tablet:flex">
-        <ToggleTheme />
+            <ToggleTheme />
         </div> 
         <MobileNav/>
     </header>)

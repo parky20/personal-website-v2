@@ -40,16 +40,16 @@ const MobileNav = () => {
      
       
     return( 
-        <div className="absolute top-0 right-0 w-screen justify-center tablet:hidden"> 
+        <div className="tablet:hidden"> 
          {open && <div className="absolute top-0 right-0 overlay w-4/6 bg-white dark:bg-dark-background  flex justify-center items-center h-screen z-50"> 
                 <div className="flex flex-col items-center space-y-10"> 
                     <ToggleTheme />
                     <NavigationItem menu="home" href="/"/>
                     <NavigationItem menu="about me" href="/about me"/>
-                    <NavigationItem menu="resume" href="/404"/> 
+                    <NavigationItem menu="resume" href="/resume"/> 
                 </div>
             </div>}
-        <button className="absolute top-8 right-3 z-[100]" onClick={handleClick}> {(<AnimatedHamburger open={open}/>)}</button>  
+        <button className="absolute top-8 right-3 z-[100] h-1/3 w-1/6" onClick={handleClick}> {(<AnimatedHamburger open={open}/>)}</button>  
         </div>)
 }
 export default MobileNav
