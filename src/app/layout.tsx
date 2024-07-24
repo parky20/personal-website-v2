@@ -36,15 +36,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) { 
   return (
-    <html lang="en" className={`${inter.variable} ${dmSerif.variable} ${pacifico.variable}`}>
+    <html lang="en" className={`${inter.variable} ${dmSerif.variable} ${pacifico.variable}`} suppressHydrationWarning>
       <head>
+        <title>Yuni Park</title>
+        <meta name="description" content="Personal Website" />
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" /> 
       </head>
       <body className="h-full text-black bg-background dark:bg-dark-background dark:text-dark-text font-dmSerif"> 
       <ThemeProvider
           attribute="class"
           defaultTheme="system"
-          enableSystem
+          enableSystem 
           disableTransitionOnChange
         > 
             <Header/>
