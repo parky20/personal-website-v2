@@ -1,7 +1,6 @@
 import { Project } from "@/lib/utils";
 import GithubIcon from "@/ui/GithubIcon";
 import LinkIcon from "@/ui/LinkIcon";
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Languages from "./Languages";
 
@@ -11,7 +10,7 @@ type ProjectCardProps = {
 }
 const ProjectCard: React.FC<ProjectCardProps> = ({ project, isOngoing }) => {
     return (
-        <motion.div
+        <div
             key={project.title}
             className={`flex flex-col justify-between font-sans`} 
         >
@@ -29,7 +28,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, isOngoing }) => {
                     <GithubIcon border={false}/>   
                     {project.href && (<LinkIcon href={project.href }/>)}
             </div> 
-        </motion.div>
+        </div>
     );
 };
 

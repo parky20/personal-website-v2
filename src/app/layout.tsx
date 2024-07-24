@@ -1,7 +1,7 @@
 import Email from "@/components/Email";
 import Footer from "@/components/Footer";
+import Providers from "@/components/Providers";
 import type { Metadata } from "next";
-import { ThemeProvider } from "next-themes";
 import { DM_Serif_Display, Inter, Pacifico } from "next/font/google";
 import Header from "../components/Header";
 import Socials from "../components/Socials";
@@ -41,18 +41,13 @@ export default function RootLayout({
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" /> 
       </head>
       <body className="h-full text-black bg-background dark:bg-dark-background dark:text-dark-text font-dmSerif"> 
-      <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem 
-          disableTransitionOnChange
-        > 
-            <Header/>
-            {children}  
-            <Footer /> 
-            <Socials/> 
-            <Email/>    
-        </ThemeProvider>
+            <Providers>
+              <Header/>
+              {children}  
+              <Footer /> 
+              <Socials/> 
+              <Email/>     
+            </Providers>  
       </body>
     </html>
   )
