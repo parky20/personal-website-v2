@@ -1,3 +1,4 @@
+'use client'
 import { Project } from "@/lib/utils";
 import GithubIcon from "@/ui/GithubIcon";
 import LinkIcon from "@/ui/LinkIcon";

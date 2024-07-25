@@ -1,5 +1,3 @@
-'use client';
-
 import Experience from "@/components/Experience";
 import MaskedCursor from "@/components/MaskedCursor";
 import ProjectSection from "@/components/ProjectSection";
