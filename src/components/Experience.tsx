@@ -66,7 +66,7 @@ export default function Experience() {
     return (
         <SectionContainer sectionTitle="experience">  
             <div className="w-full px-10 grid grid-flow-row-dense text-base text-primary
-                            laptop:grid-flow-col-dense min-h-64 mb-28 tablet:px-0 tablet:mb-8 laptop:mb-5">  
+                            laptop:grid-flow-col-dense min-h-72 mb-28 tablet:px-0 tablet:mb-8 laptop:mb-5">  
                 <ul className="list-none mr-0 border-secondary laptop:border-b-0 laptop:border-l-2 border-opacity-10
                                  h-max flex overflow-x-scroll border-l-0 border-b-2 laptop:flex-col laptop:mr-5">
                     {workList.map((w, index) => ( 
@@ -94,7 +94,8 @@ export default function Experience() {
                             <div className="mt-5">
                                 <ul className="list-none space-y-2 font-sans dark:text-dark-text text-base">
                                     {w.dscr.map((d, index) => ( 
-                                        <li key={index}><span className="mr-2 text-accent">▹</span>{d}</li> 
+                                        <li key={index} className="flex"><span className="mr-2 text-accent">▹</span>
+                                                        <span>{d}</span></li> 
                                     ))} 
                                 </ul>
                             </div>  
