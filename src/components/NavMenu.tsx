@@ -1,9 +1,20 @@
 'use client'
 import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 import "../components/DarkModeSwitch.css";
 import NavigationItem from "./Navigationitem";
 
-export default function NavMenux() {   
+export default function NavMenu() {  
+    const pathname = usePathname();
+    const [current, setCurrent] = useState('');
+    const activeMenu = (path: string) => {  
+        return current === path
+    }
+    useEffect(() => {
+        setCurrent(pathname); 
+    }, [pathname]);
+ 
     return (
         <div className="hidden  
                     tablet:flex tablet:items-center p-1 
@@ -16,7 +27,8 @@ export default function NavMenux() {
             >
                 <NavigationItem 
                     menu="home" 
-                    href="/"   
+                    href="/"  
+                    active = {activeMenu("/")}
                 />
             </motion.div>
             <motion.div
@@ -26,7 +38,8 @@ export default function NavMenux() {
             >
                 <NavigationItem 
                     menu="about me" 
-                    href="/aboutMe"  
+                    href="/aboutMe" 
+                    active = {activeMenu("/aboutMe")} 
                 />
             </motion.div>
             <motion.div
@@ -36,7 +49,8 @@ export default function NavMenux() {
             >
                 <NavigationItem 
                     menu="resume" 
-                    href="/resume"   
+                    href="/resume"  
+                    active = {activeMenu("/resume")}
                 />
             </motion.div>
         </div>   

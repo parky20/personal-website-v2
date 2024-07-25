@@ -6,9 +6,9 @@ export default function Home() {
   return (   
     <div id="root" className="flex flex-col justify-center items-center"> 
         <MaskedCursor/> 
-        <Experience />
-        <ProjectSection />
-        <Skills />      
+          <Experience />
+          <ProjectSection />
+          <Skills />      
     </div> 
   );
 }
