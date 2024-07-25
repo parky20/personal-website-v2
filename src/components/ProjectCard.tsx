@@ -13,6 +13,13 @@ type ProjectCardProps = {
 const ProjectCard: React.FC<ProjectCardProps> = ({ project, isOngoing }) => {
     return (
         <motion.div
+            whileInView="visible"
+            initial="hidden"
+            transition={{ duration: 1.5, type: "spring" }}
+            variants={{
+                visible: { transform: "translateY(0px)" },
+                hidden: { transform: "translateY(50px)" },
+            }}
             key={project.title}
             className={`flex flex-col justify-between font-sans`} 
         >
