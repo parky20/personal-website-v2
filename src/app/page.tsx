@@ -5,8 +5,7 @@ import Skills from "@/components/Skills";
 export default function Home() {     
   return (   
     <div id="root" className="flex flex-col justify-center items-center"> 
-        <MaskedCursor/>
-        {/* <AboutMe /> */}   
+        <MaskedCursor/> 
           <Experience />
           <ProjectSection />
           <Skills />      
