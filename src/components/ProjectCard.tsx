@@ -1,6 +1,7 @@
 import { Project } from "@/lib/utils";
 import GithubIcon from "@/ui/GithubIcon";
 import LinkIcon from "@/ui/LinkIcon";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Languages from "./Languages";
 
@@ -10,7 +11,14 @@ type ProjectCardProps = {
 }
 const ProjectCard: React.FC<ProjectCardProps> = ({ project, isOngoing }) => {
     return (
-        <div
+        <motion.div 
+            whileInView="visible"
+            initial="hidden"
+            transition={{ duration: 1.5, type: "spring" }}
+            variants={{
+                visible: { transform: "translateY(0px)", opacity: 1 },
+                hidden: { transform: "translateY(40px)", opacity:0 },
+            }}
             key={project.title}
             className={`flex flex-col justify-between font-sans`} 
         >
@@ -28,7 +36,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, isOngoing }) => {
                     <GithubIcon border={false}/>   
                     {project.href && (<LinkIcon href={project.href }/>)}
             </div> 
-        </div>
+        </motion.div>
     );
 };
 

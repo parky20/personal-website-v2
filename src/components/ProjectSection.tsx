@@ -1,3 +1,4 @@
+'use client'
 import { Project } from "@/lib/utils";
 import CurrentProjects from "./CurrentProject";
 import ProjectCard from "./ProjectCard";
@@ -38,15 +39,16 @@ export default function ProjectSection() {
     ];
 
     return (
-        <SectionContainer sectionTitle="projects">
-            <div className="px-10 flex flex-col items-stretch tablet:px-0">
-                <div className="grid grid-cols-1 laptop:grid-cols-2 gap-x-10 gap-y-10">  
-                    {projects.map(project => (
-                        <ProjectCard key={project.title} project={project} isOngoing={false}/>
-                    ))}
+        <SectionContainer sectionTitle="projects"> 
+            <div className="px-10 flex flex-col items-stretch tablet:px-0">   
+                <div   
+                    className="grid grid-cols-1 laptop:grid-cols-2 gap-x-10 gap-y-10">  
+                    {projects.map(project => ( 
+                        <ProjectCard key={project.title} project={project} isOngoing={false}/> 
+                     ))}
                 </div>  
                 <CurrentProjects />  
-            </div> 
+            </div>   
         </SectionContainer>
     );
 }

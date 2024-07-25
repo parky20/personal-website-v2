@@ -50,7 +50,7 @@ export default function Skills() {
                     transition={{ duration: 1.5, type: "spring" }}
                     variants={{
                         visible: { transform: "translateY(0px)" },
-                        hidden: { transform: "translateY(50px)" },
+                        hidden: { transform: "translateY(-20px)" },
                     }}
                         className="grid grid-cols-2 gap-x-24 gap-y-7 font-sans px-10
                                 tablet:grid-cols-4 tablet:px-0">

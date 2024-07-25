@@ -1,7 +1,6 @@
 .mask {
     mask-image: url(../../public/mask.svg);  
-    background-color: #264143;
-    /* #f1ccd4;     */
+    background-color: #264143; 
     mask-repeat: no-repeat;
     cursor:default; 
     box-shadow: 2px 2px 3px black;

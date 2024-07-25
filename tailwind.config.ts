@@ -106,10 +106,9 @@ const config: Config = {
         lg: ['20px', '28px'],
         xl: ['24px', '32px'],
       },
-      fontFamily: {
-        playfair: ['var(--font-inter)'],  
-        dmSerif: ['var(--font-dm-serif-display)'],
-        pacifico: ['var(--font-pacifico)']
+      fontFamily: { 
+        dmSerif: ['var(--font-dm-serif-display)', 'sans-serif'],
+        pacifico: ['var(--font-pacifico)', 'cursive']
       },
       boxShadow: {
         header: "2px 2px 3px #cac2bc"

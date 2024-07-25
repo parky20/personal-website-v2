@@ -88,9 +88,9 @@ export default function Experience() {
                 </ul>   
                 {workList.map((w, index) => ( 
                     current === index && ( 
-                        <motion.div key={index} initial={{opacity:0, x:0}} animate={{opacity: 1, transform: "translateX(5px)", transition: {duration: 0.5, ease: "easeIn"}}} className="flex-col mt-5 laptop:mt-0">
-                            <span className="text-xl font-semibold font-sans dark:text-dark-title">{w.position} <span className="text-accent font-bold">@{w.company}</span></span>
-                            <p className="mt-2 font-playfair text-sm  dark:text-dark-text">{w.date}</p> 
+                        <motion.div key={index} initial={{opacity:0, x:0}} animate={{opacity: 1, transform: "translateX(5px)", transition: {duration: 0.5, ease: "easeIn"}}} className="flex-col mt-5 laptop:mt-0 font-sans">
+                            <span className="text-xl font-semibold dark:text-dark-title">{w.position} <span className="text-accent font-bold">@{w.company}</span></span>
+                            <p className="mt-2 text-sm dark:text-dark-text">{w.date}</p> 
                             <div className="mt-5">
                                 <ul className="list-none space-y-2 font-sans dark:text-dark-text text-base">
                                     {w.dscr.map((d, index) => ( 
