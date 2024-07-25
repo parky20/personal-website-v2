@@ -45,7 +45,7 @@ const MobileNav = () => {
                 <div className="flex flex-col items-center space-y-10"> 
                     <ToggleTheme />
                     <NavigationItem menu="home" href="/"/>
-                    <NavigationItem menu="about me" href="/about me"/>
+                    <NavigationItem menu="about me" href="/aboutMe"/>
                     <NavigationItem menu="resume" href="/resume"/> 
                 </div>
             </div>}
