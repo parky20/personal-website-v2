@@ -15,7 +15,7 @@ const CurrentProjects = () => {
             color: "",
             img: "",
             lang: ["React", "Next", "Typescript", "Framer motion", "Tailwind CSS"],
-            descr: "Improving on the user interface and experience of this website!", 
+            descr: "Currently updating the site. Stay tuned for new content and improved user interactions!", 
         }
     ];
 
