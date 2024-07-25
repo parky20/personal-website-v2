@@ -6,7 +6,7 @@ import { FiMoon, FiSun } from "react-icons/fi";
 import "../components/DarkModeSwitch.css";
 export default function ToggleTheme() {   
     const [mounted, setMounted] = useState(false)
-    const {theme, setTheme, resolvedTheme} = useTheme()   
+    const {setTheme, resolvedTheme} = useTheme()   
 
     useEffect(() => { 
         setMounted(true)    
