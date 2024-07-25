@@ -6,8 +6,9 @@ import SectionContainer from "./SectionContainer";
 
 export default function Experience() {
     const [current, setCurrent] = useState(0);  
-    const [borderBottom, setBorderBottom] = useState(false);  
-    //  ["Northeastern", "SCOUT", "SNET", "The Broad Institute"]
+    const [borderBottom, setBorderBottom] = useState(false);    
+    const {primary, opaque, accent} = Colors
+    
     const workList = [{
         company: "Scout",
         position: "Technical Lead",
@@ -61,24 +62,21 @@ export default function Experience() {
         // Add event listener for resize
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
-    }, [borderBottom]);
-    const {primary, opaque} = Colors
+    }, [borderBottom]); 
     return (
         <SectionContainer sectionTitle="experience">  
-            <div className="px-10 grid grid-flow-row-dense text-base text-primary
+            <div className="w-full px-10 grid grid-flow-row-dense text-base text-primary
                             laptop:grid-flow-col-dense min-h-64 mb-28 tablet:px-0 tablet:mb-8 laptop:mb-5">  
                 <ul className="list-none mr-0 border-secondary laptop:border-b-0 laptop:border-l-2 border-opacity-10
-                                 h-max flex overflow-x-scroll 
-                                 border-l-0 border-b-2 
-                                laptop:flex-col laptop:mr-5">
+                                 h-max flex overflow-x-scroll border-l-0 border-b-2 laptop:flex-col laptop:mr-5">
                     {workList.map((w, index) => ( 
                         <motion.li key={index}  
                             className="p-2"
                             animate={{ 
-                                borderLeft: !borderBottom && index === current ? `2px solid ${primary}`: 'none', 
-                                borderBottom: borderBottom && index === current ? `2px solid ${primary}`: 'none', 
-                                background: index === current ? `${opaque}`: 'none',
-                                color: index === current ? `${primary}`: 'black'
+                                borderLeft: !borderBottom && index === current ? `2px solid ${accent}`: 'none', 
+                                borderBottom: borderBottom && index === current ? `2px solid ${accent}`: 'none', 
+                                background: index === current ? `${opaque}`: `rgb(0,0,0,0)`,  
+                                color: index === current ? `${accent}`: `${primary}`
                             }} 
                             > 
                             <button 

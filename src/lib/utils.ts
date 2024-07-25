@@ -12,6 +12,7 @@ export type Project = {
 }
 
 export const Colors = { 
-   primary: "rgb(225, 99, 136)", //secondary
+   primary:  "rgb(38,65,67)",
+   accent: "rgb(225, 99, 136)", //pink
   opaque: "rgb(220, 222, 222, 0.2)"
 }
