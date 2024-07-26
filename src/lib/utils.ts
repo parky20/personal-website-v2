@@ -1,6 +1,9 @@
-function combineClassNames(...classes:(string | undefined | false | null)[]) {
-    return classes.filter(Boolean).join(' ');
-  }
+import { clsx, type ClassValue } from "clsx";
+import { twMerge } from "tailwind-merge";
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
 
 export type Project = {
     title: string
@@ -12,8 +15,7 @@ export type Project = {
 }
 
 export const Colors = { 
-  background: "rgb(253 241 230)",
-  primary: "rgb(38,65,67)", //secondary
-  opaque: "rgb(220, 222, 222, 0.2)",
-  accent: "rgb(225, 99, 136)"
+   primary:  "rgb(38,65,67)",
+   accent: "rgb(225, 99, 136)", //pink
+  opaque: "rgb(220, 222, 222, 0.2)"
 }

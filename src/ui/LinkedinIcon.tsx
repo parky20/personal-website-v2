@@ -6,7 +6,7 @@ type LinkedInProps = {
 }
 const LinkedInIcon: React.FC<LinkedInProps> = ({border}) => {
     return (
-        <LinkedIcon href="https://www.linkedin.com/in/yunyi-park/" border={border}><FiLinkedin/></LinkedIcon>  
+        <LinkedIcon href="https://www.linkedin.com/in/yunyi-park/"><FiLinkedin/></LinkedIcon>  
     )
 }
 

@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 
 type NavigationItemProps = {
     menu: string;
@@ -6,8 +7,15 @@ type NavigationItemProps = {
   }; 
  
 const NavigationItem: React.FC<NavigationItemProps> = ({ menu, href, active }) => {  
-    return (<div className={`text-primary dark:text-white px-6 py-1 rounded-full ${active ? 'underline' : 'no-underline'} hover:underline decoration-2 underline-offset-4 decoration-accent`}><a href={href}>{menu}</a></div>);
-};
+  return (
+    <div className={cn(
+      'text-primary dark:text-white px-6 py-1 rounded-full hover:underline decoration-2 underline-offset-4 decoration-accent',
+      active ? 'underline' : 'no-underline'
+    )}>
+      <a href={href}>{menu}</a>
+    </div>
+  );
+  };
 
 export default NavigationItem
   

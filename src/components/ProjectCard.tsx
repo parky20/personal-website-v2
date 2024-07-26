@@ -1,4 +1,5 @@
-import { Project } from "@/lib/utils";
+'use client'
+import { cn, Project } from "@/lib/utils";
 import GithubIcon from "@/ui/GithubIcon";
 import LinkIcon from "@/ui/LinkIcon";
 import { motion } from "framer-motion";
@@ -11,19 +12,19 @@ type ProjectCardProps = {
 }
 const ProjectCard: React.FC<ProjectCardProps> = ({ project, isOngoing }) => {
     return (
-        <motion.div 
+        <motion.div
             whileInView="visible"
             initial="hidden"
             transition={{ duration: 1.5, type: "spring" }}
             variants={{
-                visible: { transform: "translateY(0px)", opacity: 1 },
-                hidden: { transform: "translateY(40px)", opacity:0 },
+                visible: { transform: "translateY(0px)" },
+                hidden: { transform: "translateY(50px)" },
             }}
             key={project.title}
             className={`flex flex-col justify-between font-sans`} 
         >
             {!isOngoing && ( 
-                <div className={`${project.color} rounded-md`}>
+                <div className={cn(project.color, 'rounded-md')}>
                     <Image className="mx-auto inset-0" width={600} height={400} alt={project.title} src={project.img} /> 
                 </div> 
             )}

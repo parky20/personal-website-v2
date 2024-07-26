@@ -1,6 +1,7 @@
 import Email from "@/components/Email";
 import Footer from "@/components/Footer";
-import Providers from "@/components/Providers";
+import Provider from "@/components/Provider";
+import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { DM_Serif_Display, Inter, Pacifico } from "next/font/google";
 import Header from "../components/Header";
@@ -29,25 +30,29 @@ const pacifico = Pacifico({
   display: 'swap',
   variable: '--font-pacifico', 
   weight:"400"
-})
+}) 
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) { 
+  const classFonts = cn(inter.variable, dmSerif.variable, pacifico.variable); 
   return (
-    <html lang="en" className={`${inter.variable} ${dmSerif.variable} ${pacifico.variable}`} suppressHydrationWarning>
-      <head> 
+    <html lang="en" className={classFonts} suppressHydrationWarning>
+      <head>
+        <title>Yuni Park</title>
+        <meta name="description" content="Personal Website" />
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" /> 
       </head>
       <body className="h-full text-black bg-background dark:bg-dark-background dark:text-dark-text font-dmSerif"> 
-            <Providers>
-              <Header/>
-              {children}  
-              <Footer /> 
-              <Socials/> 
-              <Email/>     
-            </Providers>  
+      <Provider> 
+            <Header/>
+            {children}  
+            <Footer /> 
+            <Socials/> 
+            <Email/>    
+        </Provider>
       </body>
     </html>
   )

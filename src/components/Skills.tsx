@@ -1,5 +1,3 @@
-'use client'
-import { motion } from "framer-motion";
 import SectionContainer from "./SectionContainer";
 
 const skillsData = {
@@ -44,15 +42,7 @@ const skillsData = {
 export default function Skills() {
     return ( 
             <SectionContainer sectionTitle="SKILLS">
-                <motion.div
-                    whileInView="visible"
-                    initial="hidden"
-                    transition={{ duration: 1.5, type: "spring" }}
-                    variants={{
-                        visible: { transform: "translateY(0px)" },
-                        hidden: { transform: "translateY(-20px)" },
-                    }}
-                        className="grid grid-cols-2 gap-x-24 gap-y-7 font-sans px-10
+                <div className="grid grid-cols-2 gap-x-24 gap-y-7 font-sans px-10
                                 tablet:grid-cols-4 tablet:px-0">
                     {Object.entries(skillsData).map(([category, skills]) => (
                         <div key={category} className="w-1/3">
@@ -64,7 +54,7 @@ export default function Skills() {
                             </div>
                         </div>
                     ))}
-                </motion.div>
+                </div>
             </SectionContainer> 
     );
 }
