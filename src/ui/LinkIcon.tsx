@@ -6,7 +6,7 @@ type LinkIconProps = {
 }
 const GithubIcon: React.FC<LinkIconProps> = ({href}) => {
     return (
-        <LinkedIcon href={href} border={false}><GoLinkExternal/></LinkedIcon>
+        <LinkedIcon href={href}><GoLinkExternal/></LinkedIcon>
     )
 }
 

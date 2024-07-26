@@ -1,5 +1,5 @@
 'use client'
-import { Project } from "@/lib/utils";
+import { cn, Project } from "@/lib/utils";
 import GithubIcon from "@/ui/GithubIcon";
 import LinkIcon from "@/ui/LinkIcon";
 import { motion } from "framer-motion";
@@ -24,7 +24,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, isOngoing }) => {
             className={`flex flex-col justify-between font-sans`} 
         >
             {!isOngoing && ( 
-                <div className={`${project.color} rounded-md`}>
+                <div className={cn(project.color, 'rounded-md')}>
                     <Image className="mx-auto inset-0" width={600} height={400} alt={project.title} src={project.img} /> 
                 </div> 
             )}

@@ -6,7 +6,7 @@ type LinkedIconProps = {
 }
 const GithubIcon: React.FC<LinkedIconProps> = ({border}) => {
     return (
-        <LinkedIcon href="https://github.com/yunip20" border={border}><FiGithub/></LinkedIcon>
+        <LinkedIcon href="https://github.com/yunip20"><FiGithub/></LinkedIcon>
     )
 }
 
