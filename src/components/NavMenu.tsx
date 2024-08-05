@@ -2,7 +2,6 @@
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import "../components/DarkModeSwitch.css";
 import NavigationItem from "./Navigationitem";
 
 export default function NavMenu() {  

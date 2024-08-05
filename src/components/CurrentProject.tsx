@@ -8,7 +8,7 @@ const CurrentProjects = () => {
             color: "",
             img: "",
             lang: ["User Research", "Co-design", "Interview", "Competitive Analysis"],
-            descr: "Tabi is an AI-generated web application that helps designers with generating and synthesizing a user journey mapping", 
+            descr: "Tabi is an AI-assisted web application that helps designers with generating and synthesizing a user journey mapping", 
         },
         {
             title: "Personal Website V2",

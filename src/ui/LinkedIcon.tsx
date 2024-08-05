@@ -2,7 +2,6 @@
 
 import { Colors } from "@/lib/utils"
 import { motion } from "framer-motion"
-import "../components/DarkModeSwitch.css"
 type LinkedIconProps = {
     children: React.ReactNode,
     href: string, 

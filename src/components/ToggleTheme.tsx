@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { FiMoon, FiSun } from "react-icons/fi";
-import "../components/DarkModeSwitch.css";
 export default function ToggleTheme() {   
     const [mounted, setMounted] = useState(false)
     const {setTheme, resolvedTheme} = useTheme()   
