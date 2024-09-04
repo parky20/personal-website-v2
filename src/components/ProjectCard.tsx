@@ -22,12 +22,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, isOngoing }) => {
             }}
             key={project.title}
             className={`flex flex-col justify-between font-sans`} 
-        >
-            {!isOngoing && ( 
-                <div className={cn(project.color, 'rounded-md')}>
-                    <Image className="mx-auto inset-0" width={600} height={400} alt={project.title} src={project.img} /> 
-                </div> 
-            )}
+        > 
+            <div className={cn(project.color, 'rounded-md')}>
+                <Image className="mx-auto inset-0" width={600} height={400} alt={project.title} src={project.img} /> 
+            </div>  
             <div className="flex flex-col items-start p-3"> 
                 <span className="text-xl font-semibold dark:text-dark-title">{project.title}</span>
                 <p className=" font-light">{project.descr}</p>

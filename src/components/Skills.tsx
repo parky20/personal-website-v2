@@ -12,15 +12,21 @@ const skillsData = {
         "Scala",
         "Kotlin",
     ],
-    FRAMEWORKS: [
-        "React",
+    FRAMEWORKS: [ 
+        "React", 
         "Node.js",
         "Next.js",
+        "Convex", 
         "Gatsby",
         "Jest",
-        "Express",
+        "Express", 
+        "Mockito", 
+    ],
+    LIBRARIES: [
         "jQuery",
-        "Mockito",
+        "Clerk",
+        "React Flow", 
+        "Zustand", 
     ],
     TOOLS: [
         "Bash",
@@ -42,8 +48,8 @@ const skillsData = {
 export default function Skills() {
     return ( 
             <SectionContainer sectionTitle="SKILLS">
-                <div className="grid grid-cols-2 gap-x-24 gap-y-7 font-sans px-10
-                                tablet:grid-cols-4 tablet:px-0">
+                <div className="grid grid-cols-3 gap-x-24 gap-y-7 font-sans px-10
+                                tablet:grid-cols-5 tablet:px-0">
                     {Object.entries(skillsData).map(([category, skills]) => (
                         <div key={category} className="w-1/3">
                             <p className="mb-4 font-semibold dark:text-dark-title">{category}</p>

@@ -5,15 +5,15 @@ const CurrentProjects = () => {
     const ongoing: Project[] = [
         {
             title: "Tabi",
-            color: "",
-            img: "",
-            lang: ["User Research", "Co-design", "Interview", "Competitive Analysis"],
+            color: "bg-[#264143]",
+            img: "/tabi.png",
+            lang: ["React", "React Flow", "Typescript", "Convex", "Zustand", "Clerk", "User Research", "Co-design", "Interview", "Competitive Analysis"],
             descr: "Tabi is an AI-assisted web application that helps designers with generating and synthesizing a user journey mapping", 
         },
         {
             title: "Personal Website V2",
-            color: "",
-            img: "",
+            color: "bg-[#264143]",
+            img: "/pw2.png",
             lang: ["React", "Next", "Typescript", "Framer motion", "Tailwind CSS"],
             descr: "Currently updating the site. Stay tuned for new content and improved user interactions!", 
         }
