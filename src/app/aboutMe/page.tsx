@@ -9,10 +9,10 @@ export default function AboutMe() {
             <p className="text-base md:text-[18px] font-sans font-light ml-10">   
                 My name is Yuni Park, and I recently graduated from <HighlightedText>
                 Khoury College of Computer Science at Northeastern University </HighlightedText> with a degree in <HighlightedText>Computer Science and Cognitive Psychology</HighlightedText>.
-                Growing up, I always enjoyed art, solving problems, and helping others through creative ways. <br/> <br/> 
+                Growing up, I always enjoyed solving problems, and helping others through creative ways. <br/> <br/> 
                 At Northeastern, I had the opportunity to delve deeper into human behavior and the technical side of computing. 
                 Combining my interdisciplinary skills, I aim to <HighlightedText>develop solutions</HighlightedText> that solve real-world problems, and bring enjoyment to people’s lives by providing an inclusive user experience. <br/><br/>
-                In my free time, you’ll often find me spending time with friends and family, travelling, learning new baking recipes and exploring the city!</p>   
+            </p>   
          </div> 
         </div>
    )
