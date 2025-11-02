@@ -5,7 +5,7 @@ import SideBar from "@/ui/SideBars";
 const Socials = () => {
     return (
     <SideBar left={true}>
-        <GithubIcon border={false}/>
+        {/* <GithubIcon border={false}/> */}
         <LinkedInIcon border={false}/> 
     </SideBar>)
 }
