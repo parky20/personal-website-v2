@@ -6,10 +6,7 @@ import Head from "next/head";
 export default function Home() {     
   return (   
     <>
-    <Head>
-      <meta name="robots" content="noindex, nofollow" />
-      <title>My Private Site</title>
-    </Head><div id="root" className="flex flex-col justify-center items-center">
+    <div id="root" className="flex flex-col justify-center items-center">
         <MaskedCursor />
         <Experience />
         <ProjectSection />

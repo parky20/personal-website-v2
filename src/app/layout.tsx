@@ -40,12 +40,13 @@ export default function RootLayout({
   const classFonts = cn(inter.variable, dmSerif.variable, pacifico.variable); 
   return (
     <html lang="en" className={classFonts} suppressHydrationWarning>
-      <head> 
+      <head>  
+        <meta name="robots" content="noindex, nofollow" /> 
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />  
       </head>
       <body className="h-full text-black bg-background dark:bg-dark-background dark:text-dark-text font-dmSerif"> 
       <Provider> 
-            <Header/>
+            {/* <Header/> */}
             {children}  
             <Footer /> 
             <Socials/> 
